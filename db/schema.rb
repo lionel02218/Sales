@@ -17,8 +17,10 @@ ActiveRecord::Schema.define(version: 20160623074510) do
   enable_extension "plpgsql"
 
   create_table "categories", force: :cascade do |t|
+    t.integer  "parent_id"
     t.string   "name"
-    t.string   "tax_rate"
+    t.float    "tax_rate"
+    t.string   "path"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -26,10 +28,10 @@ ActiveRecord::Schema.define(version: 20160623074510) do
   create_table "products", force: :cascade do |t|
     t.integer  "category_id"
     t.string   "name"
-    t.integer  "quantity"
+    t.integer  "quantity",    default: 1
     t.float    "price"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
   add_index "products", ["category_id"], name: "index_products_on_category_id", using: :btree

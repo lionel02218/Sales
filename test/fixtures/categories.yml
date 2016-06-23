@@ -1,26 +1,59 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+parent_a:
+  id: 0
+  name: Not Imported
+  tax_rate: 0
+
+a_one:
   id: 1
   name: Books
   tax_rate: 0
+  parent_id: 0
 
-two:
+a_two:
   id: 2
   name: Food
   tax_rate: 0
+  parent_id: 0
 
-three:
+a_three:
   id: 3
   name: Medical
   tax_rate: 0
+  parent_id: 0
 
-four:
+a_four:
   id: 4
+  name: Other
+  tax_rate: 0.1
+  parent_id: 0
+
+parent_b:
+  id: 10
   name: Imported
   tax_rate: 0.05
 
-four:
-  id: 5
+b_one:
+  id: 11
+  name: Books
+  tax_rate: 0
+  parent_id: 10
+
+b_two:
+  id: 12
+  name: Food
+  tax_rate: 0
+  parent_id: 10
+
+b_three:
+  id: 13
+  name: Medical
+  tax_rate: 0
+  parent_id: 10
+
+b_four:
+  id: 14
   name: Other
   tax_rate: 0.1
+  parent_id: 10
