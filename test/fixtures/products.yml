@@ -1,0 +1,50 @@
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+a1:
+  category_id: 1
+  name: book
+  quantity: 1
+  price: 12.49
+
+a2:
+  category_id: 5
+  name: Music CD
+  quantity: 1
+  price: 14.99
+
+a3:
+  category_id: 2
+  name: Chocolate Bar
+  quantity: 1
+  price: 14.99
+
+b1:
+  category_id: 4
+  name: Imported Box of Chocolates
+  quantity: 1
+  price: 10.00
+
+b2:
+  category_id: 4
+  name: Imported bottle of perfume
+  quantity: 1
+  price: 47.50
+
+c1:
+  category_id: 4
+  name: Imported bottle of perfume
+  quantity: 1
+  price: 27.99
+
+c2:
+  category_id: 4
+  name: Bottle of perfume
+  quantity: 1
+  price: 18.99
+
+c3:
+  category_id: 5
+  name: Packet of headache pills
+  quantity: 1
+  price: 9.75

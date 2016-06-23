@@ -1,0 +1,8 @@
+== README
+
+Test Project for SALES TAXES
+https://gist.github.com/longkt90/896730250647868778d0
+
+
+bundle exec rake db:create db:migrate
+bundle exec rake test 
