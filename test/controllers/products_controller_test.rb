@@ -2,7 +2,7 @@ require "test_helper"
 
 class ProductsControllerTest < ActionController::TestCase
   def product
-    @product ||= products :one
+    @product ||= products :a1
   end
 
   def test_index

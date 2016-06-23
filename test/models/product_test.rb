@@ -70,7 +70,7 @@ class ProductTest < ActiveSupport::TestCase
     c4 = products :c4
     puts "c4 product price: #{c4.price}, name: #{c4.name}, tax_rate: #{c4.taxes}"
     assert_not_equal(c4.price, c4.price_with_tax)
-    assert_equal(c4.price_with_tax, 11.85)
+    assert_equal(c4.price_with_tax, 11.81)
 
     assert_equal((b1.price_with_tax + b2.price_with_tax).round(2), 65.13)
 
